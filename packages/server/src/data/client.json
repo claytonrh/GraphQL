@@ -1,0 +1,599 @@
+
+mockaroo
+
+Looking to generate fake data based on your production data? Mimic your databases with a trial account from
+
+Need some mock data to test your app? Mockaroo lets you generate up to 1,000 rows of realistic test data in CSV, JSON, SQL, and Excel formats.
+
+Need more data? Plans start at just $60/year. Mockaroo is also available as a docker image that you can deploy in your own private cloud.
+Field Name
+Type
+Options
+id
+​
+blank:
+0
+%
+
+​
+first_name
+​
+blank:
+0
+%
+
+​
+email
+​
+blank:
+0
+%
+
+​
+disable
+​
+blank:
+0
+%
+
+​
+# Rows:
+100
+​
+Format:
+json
+​
+array
+include null values
+Hint: Use "." in column names to generate nested json objects, brackets to generate arrays. More information...
+
+Mock your back-end API and start coding your UI today.
+It's hard to put together a meaningful UI prototype without making real requests to an API. By making real requests, you'll uncover problems with application flow, timing, and API design early, improving the quality of both the user experience and API. With Mockaroo, you can design your own mock APIs, You control the URLs, responses, and error conditions. Paralellize UI and API development and start delivering better applications faster today!
+
+Why is test data important?
+If you're developing an application, you'll want to make sure you're testing it under conditions that closely simulate a production environment. In production, you'll have an army of users banging away at your app and filling your database with data, which puts stress on your code. If you're hand-entering data into a test environment one record at a time using the UI, you're never going to build up the volume and variety of data that your app will accumulate in a few days in production. Worse, the data you enter will be biased towards your own usage patterns and won't match real-world usage, leaving important bugs undiscovered.
+
+Why is realistic data important?
+When your test database is filled with realistic looking data, you'll be more engaged as a tester. When you demonstrate new features to others, they'll understand them faster. Real data is varied and will contain characters that may not play nice with your code, such as apostrophes, or unicode characters from other languages. Testing with realistic data will make your app more robust because you'll catch errors that are likely to occur in production before release day.
+
+Why Mockaroo?
+There are plenty of great data mocking libraries available for almost every language and platform. But not everyone is a programmer or has time to learn a new framework. Mockaroo allows you to quickly and easily to download large amounts of randomly generated test data based on your own specs which you can then load directly into your test environment using SQL or CSV formats. No programming is required.
+
+Want to automate test data generation?
+If you sign in using your Google account, you can download random data programmatically by saving your schemas and using curl to download data in a shell script via a RESTful url.
+
+What's new in Mockaroo?
+11/14/2021
+You can now generate datasets using JSON and import them into other schemas using the Dataset Column type.
+10/14/2021
+Added support for InfluxDB
+6/19/2021
+Added the ability to import fields from a JSON schema or example JSON object.
+5/22/2021
+You can now create a dataset directly from a schema. You no longer need to download and reupload generated data to create a dataset!
+5/19/2021
+You can now stream data to an MQTT endpoint! Click More > Stream to MQTT Endpoint... to get started.
+5/3/2021
+Added types related to construction work.
+5/3/2021
+Added Etherium and Tezos types.
+4/10/2021
+Added a download button to the preview dialog.
+4/4/2021
+You can now use regular expressions to generate data in formulas. For example /d+{2}/.gen
+4/2/2021
+Restored the ability to backup your schemas to files.
+3/28/2021
+You can now limit credit card numbers by card type and country.
+3/23/2021
+Massive UI Update! The UI has been overhauled to provide a faster, prettier experience.
+1/24/2021
+The Gender datatype has been modernized and expanded. You can now choose from Gender, Gender (Binary), and Gender (Facebook). Existing schemas that use the old "Gender" type have been updated to use "Gender (Binary)" for backwards compatibility.
+6/18/2020
+Added normal_dist(mean, std_dev, decimals) formula function.
+© 2022 Mockaroo, LLC.   |  Terms of Use   |  EULA   |  Privacy
+Preview
+[{
+  "id": "1108f157-107c-46dc-9e9e-c136660376d7",
+  "first_name": "Erek Hambelton",
+  "email": "ehambelton0@nhs.uk",
+  "disable": true
+}, {
+  "id": "8dc77989-5cf2-4a19-a923-cc9e48a78eca",
+  "first_name": "Elle Authers",
+  "email": "eauthers1@tamu.edu",
+  "disable": false
+}, {
+  "id": "bcf0674a-5ef3-4f5d-9ed0-a2e5c123f3f1",
+  "first_name": "Lorianna Durbann",
+  "email": "ldurbann2@comcast.net",
+  "disable": true
+}, {
+  "id": "656b2b63-df18-420c-bf73-b7e88add3e4f",
+  "first_name": "Marijn Tebbe",
+  "email": "mtebbe3@cloudflare.com",
+  "disable": false
+}, {
+  "id": "80fc004b-5cd1-48e8-b20d-f9aff5915be4",
+  "first_name": "Ninetta Duthy",
+  "email": "nduthy4@kickstarter.com",
+  "disable": true
+}, {
+  "id": "1eb7d821-93b7-46fb-858b-55cd3492c179",
+  "first_name": "Benito Law",
+  "email": "blaw5@wordpress.org",
+  "disable": true
+}, {
+  "id": "b03ecc5d-843e-411e-a6bb-70a1c11ba20e",
+  "first_name": "Tiffany Blagden",
+  "email": "tblagden6@tiny.cc",
+  "disable": true
+}, {
+  "id": "16fe2bf1-35cc-44eb-89b6-17cbf2c2c46d",
+  "first_name": "Sonnnie Milborn",
+  "email": "smilborn7@forbes.com",
+  "disable": true
+}, {
+  "id": "51af66fa-c2af-492b-9a17-80257b8d63bf",
+  "first_name": "Vallie Polly",
+  "email": "vpolly8@va.gov",
+  "disable": false
+}, {
+  "id": "da9a710c-b445-44d9-910f-84fe7a513404",
+  "first_name": "Igor Morby",
+  "email": "imorby9@biblegateway.com",
+  "disable": true
+}, {
+  "id": "48deccab-c1f4-4d96-8285-71c5badf2176",
+  "first_name": "Janeczka Hoggan",
+  "email": "jhoggana@bravesites.com",
+  "disable": true
+}, {
+  "id": "79b9e8e2-fe18-4612-a3ff-3b5bc1e4c2b8",
+  "first_name": "Doe Turneaux",
+  "email": "dturneauxb@techcrunch.com",
+  "disable": true
+}, {
+  "id": "5c035f3b-0ebe-4428-a155-602c8e430631",
+  "first_name": "Cyndie Greensmith",
+  "email": "cgreensmithc@upenn.edu",
+  "disable": false
+}, {
+  "id": "ee14757a-c49d-42aa-98ae-14a5f2c68784",
+  "first_name": "Cornelle Nield",
+  "email": "cnieldd@ameblo.jp",
+  "disable": true
+}, {
+  "id": "2b7c80ad-9427-493c-ac35-2914b24f1cbf",
+  "first_name": "Nikolai Kalb",
+  "email": "nkalbe@ovh.net",
+  "disable": true
+}, {
+  "id": "94d9f542-51b0-420d-97eb-415f5e81ac6c",
+  "first_name": "Ailina Secretan",
+  "email": "asecretanf@bing.com",
+  "disable": false
+}, {
+  "id": "1fc4d7f8-3e2c-4780-9f2b-9f34578fcb51",
+  "first_name": "Noe Huggins",
+  "email": "nhugginsg@oracle.com",
+  "disable": false
+}, {
+  "id": "72dc969e-be5a-44fb-a386-31b7c6bb18d1",
+  "first_name": "Janenna Landman",
+  "email": "jlandmanh@accuweather.com",
+  "disable": true
+}, {
+  "id": "e68c4745-024d-4b4d-8a66-8d12a9b8fa40",
+  "first_name": "Josiah Stanger",
+  "email": "jstangeri@whitehouse.gov",
+  "disable": true
+}, {
+  "id": "441b78ba-75e6-44d8-8e84-2f69558f17c9",
+  "first_name": "Crystie Orro",
+  "email": "corroj@scientificamerican.com",
+  "disable": false
+}, {
+  "id": "be5b79e3-8175-4936-be9e-d14377e63629",
+  "first_name": "Mattie Ateridge",
+  "email": "materidgek@noaa.gov",
+  "disable": true
+}, {
+  "id": "458faf74-2469-4261-9581-3160a4a88239",
+  "first_name": "Wini Barhem",
+  "email": "wbarheml@hubpages.com",
+  "disable": false
+}, {
+  "id": "e7214eac-47ae-432a-9495-de0c6f22b452",
+  "first_name": "Otto Hassen",
+  "email": "ohassenm@intel.com",
+  "disable": false
+}, {
+  "id": "d22b50f5-1a02-4f83-833e-bd8ae3a3b5fe",
+  "first_name": "Roldan Avieson",
+  "email": "raviesonn@cisco.com",
+  "disable": false
+}, {
+  "id": "4b3fc924-8029-40b2-8f4c-072d04b174eb",
+  "first_name": "Lissie Trent",
+  "email": "ltrento@netvibes.com",
+  "disable": false
+}, {
+  "id": "e5465ebf-f0d1-486f-b247-1bb6545a1833",
+  "first_name": "Dottie Fawthrop",
+  "email": "dfawthropp@a8.net",
+  "disable": false
+}, {
+  "id": "e3cb1dc4-d23e-401f-8fb3-bae5cf255585",
+  "first_name": "Michail Gunton",
+  "email": "mguntonq@ebay.co.uk",
+  "disable": false
+}, {
+  "id": "8b92f428-14d1-4fb7-95f1-5f336ac16c6e",
+  "first_name": "Daniella Simons",
+  "email": "dsimonsr@netscape.com",
+  "disable": true
+}, {
+  "id": "c08cd8ad-82e9-4856-88a5-43c7bbde1142",
+  "first_name": "Conway Knuckles",
+  "email": "cknuckless@deliciousdays.com",
+  "disable": false
+}, {
+  "id": "939f26ab-938f-45ad-8768-c723b1302f7d",
+  "first_name": "Barry Botham",
+  "email": "bbothamt@who.int",
+  "disable": true
+}, {
+  "id": "2556571a-e592-4579-8935-56ae2925670e",
+  "first_name": "Dur Petters",
+  "email": "dpettersu@nymag.com",
+  "disable": true
+}, {
+  "id": "1e50c21d-73a8-47a1-b05e-c2266f0870aa",
+  "first_name": "Birgit Zannolli",
+  "email": "bzannolliv@google.co.jp",
+  "disable": false
+}, {
+  "id": "d19a1d8c-6adf-4210-ac65-dd91aca1654a",
+  "first_name": "Quintana Searsby",
+  "email": "qsearsbyw@sina.com.cn",
+  "disable": true
+}, {
+  "id": "2a6adce5-b12c-4217-abeb-8140aabb8a74",
+  "first_name": "Enid McGookin",
+  "email": "emcgookinx@ox.ac.uk",
+  "disable": true
+}, {
+  "id": "c65df776-7f96-4298-93bc-4de30bd6a625",
+  "first_name": "Celestina Fabbri",
+  "email": "cfabbriy@oakley.com",
+  "disable": false
+}, {
+  "id": "ef6df221-f120-411b-87a3-20c61340b8bb",
+  "first_name": "Gilberto Nussen",
+  "email": "gnussenz@europa.eu",
+  "disable": true
+}, {
+  "id": "0a9a45c5-96ce-474e-b155-9cfa89adc570",
+  "first_name": "Zilvia Copper",
+  "email": "zcopper10@domainmarket.com",
+  "disable": true
+}, {
+  "id": "87fac3f7-268f-44d9-9449-ddc9b6e8dcea",
+  "first_name": "Christoforo Trunks",
+  "email": "ctrunks11@washington.edu",
+  "disable": true
+}, {
+  "id": "6e4be6d9-4912-4cdb-8fdf-f50203b34a6a",
+  "first_name": "Egan Domino",
+  "email": "edomino12@java.com",
+  "disable": true
+}, {
+  "id": "a42a000a-cdac-4728-9126-e483c5faf278",
+  "first_name": "Johna Creswell",
+  "email": "jcreswell13@cbc.ca",
+  "disable": false
+}, {
+  "id": "d4dc7e34-0383-44c5-962f-f4569b0f7464",
+  "first_name": "Ashlee Genese",
+  "email": "agenese14@miitbeian.gov.cn",
+  "disable": false
+}, {
+  "id": "eae660c2-78ef-497e-a79d-dce642c84b06",
+  "first_name": "Aileen Pittford",
+  "email": "apittford15@samsung.com",
+  "disable": true
+}, {
+  "id": "05775cfc-1964-4d3a-9acf-a35d7293b390",
+  "first_name": "Amandi Husk",
+  "email": "ahusk16@illinois.edu",
+  "disable": false
+}, {
+  "id": "d2ac8acd-529a-4501-8413-a245e9475b28",
+  "first_name": "Duncan Danit",
+  "email": "ddanit17@eventbrite.com",
+  "disable": true
+}, {
+  "id": "038c0441-7f15-46d0-be24-445940ed35e4",
+  "first_name": "Ruthi Tolliday",
+  "email": "rtolliday18@reuters.com",
+  "disable": true
+}, {
+  "id": "08252c8a-1882-4360-82cc-128590ed9679",
+  "first_name": "Walton Gozard",
+  "email": "wgozard19@ehow.com",
+  "disable": false
+}, {
+  "id": "8fa19d04-a994-42f3-bf7c-3f434d5fbdc1",
+  "first_name": "Knox Dreher",
+  "email": "kdreher1a@cbc.ca",
+  "disable": false
+}, {
+  "id": "b495e31f-e43e-4fe6-8bdf-75bb091825b4",
+  "first_name": "Maryjo Crallan",
+  "email": "mcrallan1b@xing.com",
+  "disable": true
+}, {
+  "id": "3e575d5f-d7c0-4ab0-b29b-faf351090352",
+  "first_name": "Ursa Darnborough",
+  "email": "udarnborough1c@bbc.co.uk",
+  "disable": false
+}, {
+  "id": "a22f690a-f4fe-4954-94b1-997c0c3a3cd9",
+  "first_name": "Gan Kimble",
+  "email": "gkimble1d@wired.com",
+  "disable": true
+}, {
+  "id": "502dbb74-569e-4e46-a089-b4db7c315f16",
+  "first_name": "Carson Brailsford",
+  "email": "cbrailsford1e@tumblr.com",
+  "disable": false
+}, {
+  "id": "62bf31e8-bb16-4319-a381-fde2c25ee919",
+  "first_name": "Malchy Siviter",
+  "email": "msiviter1f@biblegateway.com",
+  "disable": true
+}, {
+  "id": "bd5d809d-3173-478a-879a-00e9b28479f6",
+  "first_name": "Vaughn Gohier",
+  "email": "vgohier1g@bigcartel.com",
+  "disable": true
+}, {
+  "id": "a12ee410-89c9-4034-93f3-ce85532a95c2",
+  "first_name": "Yehudi Gavozzi",
+  "email": "ygavozzi1h@netscape.com",
+  "disable": false
+}, {
+  "id": "1f008545-0021-458a-9d4b-6bb9055803ba",
+  "first_name": "Hogan Nockalls",
+  "email": "hnockalls1i@nps.gov",
+  "disable": false
+}, {
+  "id": "54ae9e9f-3f4d-46b5-9dc9-bb9323409ba0",
+  "first_name": "Bobbie Pawelczyk",
+  "email": "bpawelczyk1j@prnewswire.com",
+  "disable": false
+}, {
+  "id": "04bc4cac-d9a9-4f9a-914d-fee79da1b92b",
+  "first_name": "Gris Youll",
+  "email": "gyoull1k@barnesandnoble.com",
+  "disable": false
+}, {
+  "id": "2152552d-b263-4279-b3f3-ef4de523e71b",
+  "first_name": "Francyne Tineman",
+  "email": "ftineman1l@paypal.com",
+  "disable": true
+}, {
+  "id": "9963c14b-fd79-41ea-b9aa-bea13d77ba78",
+  "first_name": "Katrina Bompass",
+  "email": "kbompass1m@amazon.com",
+  "disable": true
+}, {
+  "id": "2ca6b1be-e711-495a-bfd2-e095ef0b1229",
+  "first_name": "Lena Lorinez",
+  "email": "llorinez1n@woothemes.com",
+  "disable": false
+}, {
+  "id": "c04759e1-9a5e-4e98-986c-086ecf027c12",
+  "first_name": "Wilow Royce",
+  "email": "wroyce1o@typepad.com",
+  "disable": true
+}, {
+  "id": "679e3420-e447-4da8-8a76-a946831f3137",
+  "first_name": "Costa Matyukon",
+  "email": "cmatyukon1p@amazonaws.com",
+  "disable": true
+}, {
+  "id": "176b8a45-b68e-403a-b73a-7c08fe5cdc51",
+  "first_name": "Erskine Labba",
+  "email": "elabba1q@sphinn.com",
+  "disable": false
+}, {
+  "id": "fd175487-268b-42e6-803d-ccaca7e3e00c",
+  "first_name": "Elsey Beardwood",
+  "email": "ebeardwood1r@mysql.com",
+  "disable": true
+}, {
+  "id": "18844901-341d-4ad3-ac74-0b26de16f326",
+  "first_name": "Arri Pippin",
+  "email": "apippin1s@slate.com",
+  "disable": false
+}, {
+  "id": "f0a97f86-13b3-4666-8002-f7cd61779612",
+  "first_name": "Whitney Vanshin",
+  "email": "wvanshin1t@sogou.com",
+  "disable": false
+}, {
+  "id": "e6574f37-26b4-4aba-a4c3-1c00c87812d8",
+  "first_name": "Vicky Hearne",
+  "email": "vhearne1u@wufoo.com",
+  "disable": true
+}, {
+  "id": "cb2b35f2-e81e-470d-a077-638ac0e55a78",
+  "first_name": "Francisco Smallacombe",
+  "email": "fsmallacombe1v@fema.gov",
+  "disable": false
+}, {
+  "id": "f7c96e84-3d30-440d-acc3-2fbee2fbd0b2",
+  "first_name": "Jilli Highton",
+  "email": "jhighton1w@prweb.com",
+  "disable": true
+}, {
+  "id": "c890e2cd-84e0-42cc-a411-51b5dd0fbcfa",
+  "first_name": "Gene Palffrey",
+  "email": "gpalffrey1x@icio.us",
+  "disable": false
+}, {
+  "id": "1b284adb-cf1b-4a1e-b9ba-899c9b4fd35f",
+  "first_name": "Amalia Athy",
+  "email": "aathy1y@forbes.com",
+  "disable": true
+}, {
+  "id": "141441e1-e198-4f9d-88bc-5bdf24bc4925",
+  "first_name": "Lenette Jessel",
+  "email": "ljessel1z@so-net.ne.jp",
+  "disable": false
+}, {
+  "id": "b333a1ec-f858-40ed-9931-1811b8a4ad5f",
+  "first_name": "Fey Rosser",
+  "email": "frosser20@ft.com",
+  "disable": false
+}, {
+  "id": "f8fcb6f7-e3fb-40ed-ad05-e32f410ccbce",
+  "first_name": "Imogene Jaggar",
+  "email": "ijaggar21@samsung.com",
+  "disable": false
+}, {
+  "id": "f37eec2a-b3e5-4d55-aef9-6ab7bd02fc89",
+  "first_name": "Jenica Olsen",
+  "email": "jolsen22@wikispaces.com",
+  "disable": false
+}, {
+  "id": "a2311147-3c93-44b2-8ef0-fd4231a9312a",
+  "first_name": "Susie Bygate",
+  "email": "sbygate23@loc.gov",
+  "disable": false
+}, {
+  "id": "ef2d95ab-f1ff-4424-9fc4-f985a2ce2af1",
+  "first_name": "Stephi Djekic",
+  "email": "sdjekic24@cbslocal.com",
+  "disable": false
+}, {
+  "id": "6eecfdad-e35a-44ff-87dd-c72913e3f990",
+  "first_name": "Lib Kwietak",
+  "email": "lkwietak25@over-blog.com",
+  "disable": true
+}, {
+  "id": "b5039008-6c40-4f04-aaed-e55f61399eeb",
+  "first_name": "Jojo Steutly",
+  "email": "jsteutly26@huffingtonpost.com",
+  "disable": true
+}, {
+  "id": "5d499d42-22aa-448f-bc90-51113caae736",
+  "first_name": "Allyn Schlag",
+  "email": "aschlag27@bloglovin.com",
+  "disable": false
+}, {
+  "id": "31faae02-bd39-4e60-af31-00c1e4d63047",
+  "first_name": "Merwyn Marzellano",
+  "email": "mmarzellano28@meetup.com",
+  "disable": false
+}, {
+  "id": "572540ce-6abf-46c5-83c4-647f6012a3f2",
+  "first_name": "Welsh Cornels",
+  "email": "wcornels29@wikipedia.org",
+  "disable": true
+}, {
+  "id": "78d8d032-cc9d-4e86-8f35-0a675f152ec6",
+  "first_name": "Lenora Revelle",
+  "email": "lrevelle2a@auda.org.au",
+  "disable": true
+}, {
+  "id": "9240d8d2-1f23-47e1-b9ff-1c2ee99b99dc",
+  "first_name": "Ferdinand Wallhead",
+  "email": "fwallhead2b@ebay.com",
+  "disable": true
+}, {
+  "id": "83ac2663-1e28-4e15-9980-7be40ec5ab07",
+  "first_name": "Drugi Grewer",
+  "email": "dgrewer2c@gizmodo.com",
+  "disable": true
+}, {
+  "id": "7cd71fa2-951f-4db0-b7bc-6e1244af5183",
+  "first_name": "Rose Gethings",
+  "email": "rgethings2d@accuweather.com",
+  "disable": true
+}, {
+  "id": "14816903-cc86-489f-82f2-316375e13c3e",
+  "first_name": "Seward Echallier",
+  "email": "sechallier2e@paginegialle.it",
+  "disable": false
+}, {
+  "id": "e0ea1957-3454-446c-9286-45cdbd343ded",
+  "first_name": "Tammy Skep",
+  "email": "tskep2f@fda.gov",
+  "disable": false
+}, {
+  "id": "b6695cb5-9008-4bf0-b913-99be9ac902ce",
+  "first_name": "Ruthanne Danis",
+  "email": "rdanis2g@lulu.com",
+  "disable": true
+}, {
+  "id": "7219a83e-93bd-4f8b-bbb2-84df03545eb6",
+  "first_name": "Ernestus Fouracres",
+  "email": "efouracres2h@samsung.com",
+  "disable": true
+}, {
+  "id": "ca8c5d91-6bf3-4117-bdf0-3f3f98fb49e7",
+  "first_name": "Dun Dougal",
+  "email": "ddougal2i@wikimedia.org",
+  "disable": true
+}, {
+  "id": "1e43c2c5-7847-446e-9eb1-96ba1dc8377a",
+  "first_name": "Gratia Bielby",
+  "email": "gbielby2j@gnu.org",
+  "disable": false
+}, {
+  "id": "da01ed6c-3922-40e5-8a46-c2a802d144f2",
+  "first_name": "Lynnea Hawket",
+  "email": "lhawket2k@sphinn.com",
+  "disable": true
+}, {
+  "id": "f3595cea-68c8-46e7-b290-823aca2e8352",
+  "first_name": "Killian Rosi",
+  "email": "krosi2l@booking.com",
+  "disable": true
+}, {
+  "id": "237be0e4-778c-4df5-8923-081eab4bb268",
+  "first_name": "Cory Osinin",
+  "email": "cosinin2m@wsj.com",
+  "disable": false
+}, {
+  "id": "1f668e46-5b1e-4cf1-b9d9-25be70d1cd1d",
+  "first_name": "Dianne Memmory",
+  "email": "dmemmory2n@fastcompany.com",
+  "disable": false
+}, {
+  "id": "d438e0a3-3c66-4005-97f2-4497abf72fab",
+  "first_name": "Elberta Sheerin",
+  "email": "esheerin2o@craigslist.org",
+  "disable": false
+}, {
+  "id": "835be2ce-57d1-4053-a1f6-cab4d0468595",
+  "first_name": "Rosina Volage",
+  "email": "rvolage2p@seesaa.net",
+  "disable": false
+}, {
+  "id": "f66cb208-e1b2-4e49-adbf-63c90defb5af",
+  "first_name": "Bonita O'Calleran",
+  "email": "bocalleran2q@ed.gov",
+  "disable": true
+}, {
+  "id": "0f303014-9bde-4323-8449-fc976ed8bd77",
+  "first_name": "Tynan Gery",
+  "email": "tgery2r@prlog.org",
+  "disable": true
+}]
+# Rows:
+100
+​
