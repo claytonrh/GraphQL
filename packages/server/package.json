@@ -2,25 +2,26 @@
   "name": "@dev-demands/server",
   "version": "1.0.0",
   "private": true,
+  "description": "",
   "main": "src/main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon -r esm .",
-    "start": "node -r esm ."
+    "start": "node -r esm .",
+    "dev": "nodemon -r esm ."
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "apollo-server-core": "^3.7.0",
     "esm": "^3.2.25",
-    "nodemon": "^2.0.4"
+    "nodemon": "^2.0.16"
   },
   "dependencies": {
-    "apollo-server-core": "^3.8.1",
-    "apollo-server-express": "^2.13.1",
+    "apollo-server-express": "^3.7.0",
     "cors": "^2.8.5",
-    "express": "^4.17.1",
-    "graphql": "^15.0.0",
-    "uuid": "^8.1.0"
+    "express": "^4.18.1",
+    "graphql": "^16.5.0",
+    "uuid": "^8.3.2"
   },
   "nodemonConfig": {
     "ignore": [

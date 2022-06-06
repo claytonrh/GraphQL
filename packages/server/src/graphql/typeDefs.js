@@ -1,18 +1,23 @@
-// import { gql } from "apollo-server-express";
-
-import { typeDefs as clientTypeDefs } from "./Client/Client";
-import { typeDefs as demandTypeDefs } from "./Demand/Demand";
-import { typeDefs as nodeTypeDefs } from './Node/Node';
 import { gql } from 'apollo-server-express';
+
+import { typeDefs as nodeDefs } from './Node/Node';
+import { typeDefs as listDefs } from './List/List';
+import { typeDefs as clientDefs } from "./Client/Client";
+import { typeDefs as demandDefs } from "./Demand/Demand";
 
 const typeDefs = gql`
     type Query {
         _root: String
     }
 
-    ${nodeTypeDefs}
-    ${clientTypeDefs}
-    ${demandTypeDefs}
+    type Mutation {
+        _root: String
+    }
+
+    ${nodeDefs}
+    ${listDefs}
+    ${clientDefs}
+    ${demandDefs}
 `;
 
 export default typeDefs;

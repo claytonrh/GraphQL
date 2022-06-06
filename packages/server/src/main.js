@@ -1,29 +1,39 @@
-// import express from 'express';
+import express from 'express';
 import { ApolloServer } from 'apollo-server-express';
 import { ApolloServerPluginLandingPageGraphQLPlayground } from 'apollo-server-core';
 
 import typeDefs from './graphql/typeDefs';
 import resolvers from './graphql/resolvers';
 
-const server = new ApolloServer({
-  plugins: [
-      ApolloServerPluginLandingPageGraphQLPlayground(),
-  ],
-  typeDefs,
-  resolvers,
-});
+const app = express();
+const PORT = process.env.PORT ? parseInt(processs.env.PORT) : 8000;
+const HOSTNAME = process.env.HOSTNAME || '192.168.0.231';
 
-server.applyMiddleware({
-  app,
-  cors: {
-    origin: 'http://localhost:3000',
-  },
-  bodyParserConfig: true,
-});
+// let server;
 
-const PORT = process.env.PORT ? parseInt(process.env.PORT) : 8000;
-const HOSTNAME = process.env.HOSTNAME || '127.0.0.1';
+async function startServer() {
+	const server = new ApolloServer({
+		plugins: [
+			ApolloServerPluginLandingPageGraphQLPlayground(),
+		],
+		typeDefs,
+		resolvers,
+	});
+
+	await server.start();
+
+	server.applyMiddleware({
+		app,
+		cors: {
+			origin: `http://${HOSTNAME}:3000`
+		},
+		bodyParserConfig: true,
+	});
+};
+
+startServer(app);
 
 app.listen(PORT, HOSTNAME, () => {
-  console.log(`Server is listening at http://${HOSTNAME}:${PORT}.`);
+	console.log(`Server listening at ${HOSTNAME}:${PORT}`);
+	// console.log(`GraphQL ${server.graphqlPath}`);
 });

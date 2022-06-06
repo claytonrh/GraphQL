@@ -1,9 +1,10 @@
-import { gql } from "apollo-server-express";
+import { gql } from 'apollo-server-express';
 
-const typeDefs = gql `
+export const typeDefs = gql`
     interface List {
         items: [Node!]!
-        totalitems: Int!
+        totalItems: Int!
+
     }
 
     enum ListSortmentEnum {
@@ -13,12 +14,17 @@ const typeDefs = gql `
 
     input ListSort {
         sorter: String!
-        sortment:LIstSortmentEnum!
+        sortment: ListSortmentEnum!
     }
 `;
 
-
 export const ListSortmentEnum = Object.freeze({
-  ASC: 'ASC',
-  DESC: 'DESC',
+    ASC: 'ASC',
+    DESC: 'DESC',
 });
+
+export const resolvers = {
+    List: {
+        __resolveType: () => null,
+    },
+};

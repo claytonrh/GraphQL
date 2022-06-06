@@ -17,18 +17,18 @@ function createRepository (name) {
             } )        
         }),    
 
-        write: (date) => new Promise(() => {
-            writeFile(path, JSON.stringify(date), (error) => {
-                if (error) {
-                    reject(error);
-                    return;
+        write: (date) => 
+            new Promise((resolve, reject) => {
+                writeFile(path, JSON.stringify(date), (error) => {
+                    if (error) {
+                        reject(error);
+                        return;
                 }
 
                 resolve();
-            })    
-        })
-
-    }      
+            });    
+        }),
+    };      
 }
 
 export default createRepository;
